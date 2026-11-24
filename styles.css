@@ -1,1 +1,85 @@
 /*  your css code here. If applicable */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            width: 90%;
+            height: 80vh;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .left-slide,
+        .right-slide {
+            width: 50%;
+            height: 100%;
+        }
+
+        .left-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .left-slide h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .left-slide p {
+            font-size: 20px;
+        }
+
+        .right-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .up-button {
+            left: 50%;
+            margin-left: -55px;
+        }
+
+        .down-button {
+            left: 50%;
+            margin-left: 15px;
+        }
